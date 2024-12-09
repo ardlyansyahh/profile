@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #ecf0f1;
+  /* This container is needed to position the front and back side */
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Position the front and back side */
+}
+body nav {
+  box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+  background-color: #b33939;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bolder;
+  vertical-align: middle;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+body nav a {
+  font-family: "Poppins", serif;
+  text-decoration: none;
+  color: #ecf0f1;
+  transition: 0.3s;
+}
+body nav a:hover {
+  text-decoration: underline;
+  color: #f1c40f;
+}
+body #content {
+  padding-left: 200px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 100px;
+  font-size: 50px;
+  color: #2980b9;
+}
+body #content .jdc {
+  color: #f39c12;
+}
+body #content p {
+  font-size: 15px;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+}
+body #content p .dc {
+  color: #f39c12;
+  font-weight: 700;
+}
+body #content p .dcl {
+  color: #f39c12;
+  font-weight: 600;
+}
+body #content p .dcl:hover {
+  color: #2980b9;
+}
+body #content #profile {
+  width: 700px;
+  color: #e74c3c;
+}
+body #content #profile .jdc {
+  color: #27ae60;
+}
+body #content #profile .dcl {
+  color: #27ae60;
+}
+body #content #profile .dc {
+  color: #27ae60;
+}
+body #content #profile .dcl:hover {
+  color: #f1c40f;
+}
+body #content #profile button {
+  padding: 10px;
+  border-radius: 5px;
+  width: 80px;
+  border-color: #27ae60;
+  background: none;
+}
+body #content #profile button svg {
+  width: 30px;
+  height: 30px;
+  color: #27ae60;
+}
+body #content #profile button:hover {
+  background-color: #27ae60;
+}
+body #content #profile button:hover svg {
+  color: #ecf0f1;
+}
+body #content #profile img {
+  width: 550px;
+  margin-top: -250px;
+  margin-left: 600px;
+}
+body #content #exp {
+  padding-top: 50px;
+  padding-left: 400px;
+  padding-right: 200px;
+  color: #f39c12;
+}
+body #content #exp img {
+  position: absolute;
+  margin-top: -420px;
+  margin-left: -600px;
+  width: 550px;
+}
+body #content #exp .jdc {
+  color: #0097e6;
+}
+body #content #exp .dcl {
+  color: #0097e6;
+}
+body #content #exp .dcl:hover {
+  color: #f39c12;
+}
+body #int {
+  padding-top: 85px;
+  width: 60%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+body #int .judul {
+  grid-column: 1/span 2;
+}
+body #int #flatimage {
+  position: absolute;
+  width: 550px;
+  margin-left: 750px;
+  margin-top: 250px;
+}
+body #int .jdc {
+  color: #e74c3c;
+}
+body .flip-card {
+  font-size: 14px;
+  background-color: transparent;
+  width: 275px;
+  height: 225px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin-bottom: 35px;
+  transition: 0.3s;
+}
+body .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+body .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+body .depan, body .belakang {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%; /* Safari */
+  backface-visibility: hidden;
+}
+body .depan {
+  line-height: 50px;
+  vertical-align: middle;
+  padding-top: 5%;
+  background-color: #0097e6;
+  color: #2c3e50;
+  font-size: 150%;
+}
+body .belakang {
+  line-height: 50px;
+  vertical-align: middle;
+  padding-top: 5%;
+  font-size: large;
+  background-color: #e74c3c;
+  color: #2c3e50;
+  transform: rotateY(180deg);
+}
+body .belakang svg {
+  width: 16px;
+  height: 16px;
+  color: #FFC312;
+}
+body #pro {
+  margin-top: 100px;
+  width: 55%;
+  color: #1abc9c;
+}
+body #pro .cards {
+  font-size: 20px;
+  font-weight: 300;
+}
+body #pro .cards .card {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-bottom: 50px;
+}
+body #pro .cards img {
+  width: 300px;
+  border-radius: 20px;
+}
+body #pro .cards .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+body #pro .cards .container {
+  padding-top: 10px;
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+body #pro .cards .container .items2 {
+  padding-left: 20px;
+}
+body #pro .cards button {
+  color: #d35400;
+  border-color: #d35400;
+  width: 100px;
+  padding: 2px;
+  font-size: 15px;
+  margin: 10px 0;
+}
+body #pro .cards button:hover {
+  color: #ecf0f1;
+  background-color: #d35400;
+  font-weight: bold;
+}
+body .blankpad {
+  padding-top: 100px;
+}
+
+#gambarbaru {
+  width: 550px;
+  position: absolute;
+  margin-left: 950px;
+  margin-top: -650px;
+}
+
+footer {
+  box-shadow: 0 -8px 8px rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  height: 120px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: #8e44ad;
+  color: #ecf0f1;
+}
+footer a {
+  color: #ecf0f1;
+}
+footer a:hover {
+  color: #f1c40f;
+}
+
+@media only screen and (max-width: 1200px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  body .blankpad {
+    padding-top: 50px;
+  }
+  body #content {
+    padding-left: 0px;
+    margin: 0px;
+    font-size: 30px;
+  }
+  body #content p {
+    font-size: 12px;
+  }
+  body #content #profile {
+    padding-left: 10px;
+    width: 95%;
+  }
+  body #content #profile img {
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 70%;
+  }
+  body #content #exp {
+    width: 95%;
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+  body #content #exp img {
+    position: static;
+    margin: 0px;
+    width: 70%;
+  }
+  body #content #int {
+    width: 95%;
+    padding-left: 10px;
+  }
+  body #content .flip-card {
+    font-size: 14px;
+    width: 85%;
+    height: 150px;
+  }
+  body #content .depan {
+    padding-top: 5%;
+    font-size: 18px;
+  }
+  body #content .depan img {
+    width: 100px;
+  }
+  body #content .belakang {
+    padding-top: 5%;
+    font-size: 15px;
+  }
+  body #content .belakang svg {
+    width: 10px;
+    height: 10px;
+  }
+  body #content #flatimage {
+    position: static;
+    width: 70%;
+    margin-left: 40px;
+  }
+  body #content #pro {
+    width: 95%;
+    padding-left: 10px;
+  }
+  body #content #pro .cards {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  body #content #pro .cards .card {
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+  body #content #pro .cards img {
+    width: 100px;
+    border-radius: 10px;
+  }
+  body #content #pro .cards .container {
+    padding-top: 10px;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  body #content #pro .cards .container .items2 {
+    padding-left: 20px;
+  }
+  body #content #pro .cards button {
+    width: 50px;
+    padding: 2px;
+    font-size: 12px;
+  }
+  body #gambarbaru {
+    width: 80%;
+    position: static;
+    margin-left: 30px;
+    margin-top: -10px;
+  }
+  body footer {
+    padding-top: 20px;
+    grid-template-columns: 0.5% 33% 33% 33% 0.5%;
+    height: 100%;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
