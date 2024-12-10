@@ -131,16 +131,17 @@ body{
         .judul{
             grid-column: 1/span 2;
         }
-        #flatimage{
-            position: absolute;
-            width: 550px;
-            margin-left: 750px;
-            margin-top: 250px;
-        }
         .jdc{
             color: #e74c3c;
         }
     }
+    #flatimage{
+        position: absolute;
+        width: 550px;
+        margin-left: 750px;
+        margin-top: -450px;
+    }
+
 
     .flip-card {
         font-size: 14px;
@@ -341,12 +342,14 @@ footer{
                 }
             }
             #flatimage{
-                position: static;
+                position: absolute;
                 width: 70%;
                 margin-left: 40px;
+                margin-top: 0px;
             }
 
             #pro{
+                margin-top: 50%;
                 width: 95%;
                 padding-left: 10px;
                 .cards{

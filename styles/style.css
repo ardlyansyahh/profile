@@ -133,14 +133,14 @@ body #int {
 body #int .judul {
   grid-column: 1/span 2;
 }
-body #int #flatimage {
+body #int .jdc {
+  color: #e74c3c;
+}
+body #flatimage {
   position: absolute;
   width: 550px;
   margin-left: 750px;
-  margin-top: 250px;
-}
-body #int .jdc {
-  color: #e74c3c;
+  margin-top: -450px;
 }
 body .flip-card {
   font-size: 14px;
@@ -324,11 +324,13 @@ footer a:hover {
     height: 10px;
   }
   body #content #flatimage {
-    position: static;
+    position: absolute;
     width: 70%;
     margin-left: 40px;
+    margin-top: 0px;
   }
   body #content #pro {
+    margin-top: 50%;
     width: 95%;
     padding-left: 10px;
   }
